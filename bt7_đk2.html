@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt('a');
+        let b = prompt('b');
+        let c = prompt('c');
+        let d = b*b - 4*a*c;
+        
+        if(d == 0){
+            var x = -b / 2*a;
+            alert('pt có nghiệm kép x1 , x2' +  x);
+        }else if(d > 0){
+            alert('x 1 là :' + Math.round((-b + Math.sqrt(d)) / 2*a));
+            alert('x 2 là :' + Math.round((-b - Math.sqrt(d)) / 2*a));
+        }else{
+            alert('pt vô nghiệm');
+        }
+    </script>
+    
+</body>
+</html>

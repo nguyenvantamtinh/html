@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let money = prompt('thu nhập hằng tháng');
+        if(money <= 5000000){
+            alert('thuế'  + (money*0.05));
+        }else if(money > 5000000 && money <= 10000000){
+            alert('thuế' + (money*0.25));
+        }else if(money > 10000000 && money <= 18000000){
+            alert('thuế' + (money*0.75));
+        }else if(money > 18000000 && money <= 32000000){
+            alert('thuế' + (money*1.65));
+        }else if(money > 32000000 && money <= 52000000){
+            alert('thuế' + (money*3.25));
+        }else if(money > 52000000 && money <= 80000000){
+            alert('thuế' + (money*5.85));
+        }else{
+            alert('thuế ' + (money*9.85));
+        }     
+    </script>
+    
+</body>
+</html>
